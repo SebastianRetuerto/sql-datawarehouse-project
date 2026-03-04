@@ -1,5 +1,10 @@
 /*
-mensaje acerca de este proceso
+This script will create the procedure or update the procedure of "Loading Bronze Layer".
+This procedure makes a bulk insert for each table, it use the path of the csv file to upload all data into each table. It specify that we use the data starting from the second row
+of the csv file, also the separator of each value for each column its a comma (','), 'Tablock' to upload all csv file.
+Before that procedure there is a truncate function for each table, so first of all we make the table empty and then we make the bulk insert.
+Also we declare variables to catch the start_time and end_time of any action, so at the results we can see the duration of creation for any table.
+batch_start_time and batch_end_time are use to get the duration of all the proccess
 
 */
 
